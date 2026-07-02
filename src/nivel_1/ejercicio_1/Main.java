@@ -45,7 +45,7 @@ public class Main {
         }
         HashSet<Month> monthSet = new HashSet<Month>(monthList);
 
-        System.out.println("Hash Set, elimina elementos duplicados, pero no guarda el orden");
+        System.out.println("HashSet, elimina elementos duplicados, pero no guarda el orden:");
         for (Month month : monthSet) {
             System.out.println(month.toString() + "\n");
         }

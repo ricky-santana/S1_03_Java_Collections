@@ -5,6 +5,4 @@ Crea una clase llamada Monthcon un atributo name, que almacene el nombre del mes
 
 Convierte después el ArrayListen uno HashSety verifica que no se permiten duplicados.
 
-Por último, recorre la colección con un bucle fory con un Iterator.
-
-## 🧩 Explicaciones
+Por último, recorre la colección con un bucle for y con un Iterator.
