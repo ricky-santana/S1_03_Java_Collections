@@ -7,14 +7,16 @@ import java.util.ArrayList;
 
 public class TextToArray {
     private String doc;
-    private ArrayList<String> countryList;
-    private ArrayList<String> capitalList;
+    private static ArrayList<String> countryList;
+    private static ArrayList<String> capitalList;
 
     public TextToArray(String doc) throws IOException {
         this.doc = doc;
-        this.countryList = new ArrayList<String>();
-        this.capitalList = new ArrayList<String>();
+        countryList = new ArrayList<String>();
+        capitalList = new ArrayList<String>();
         this.readAndWrite();
+    }
+    public TextToArray (){
     }
 
     public void readAndWrite() throws IOException {
