@@ -2,6 +2,7 @@ package nivel_1.ejercicio_1;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Main {
     void main() {
@@ -49,6 +50,19 @@ public class Main {
             System.out.println(month.toString() + "\n");
         }
 
+        Iterator<Month> itList = monthList.iterator();
+
+        while (itList.hasNext()){
+            Month itMonth = itList.next();
+            if (itMonth.toString().contains("e")){
+                itList.remove();
+            }
+        }
+
+        System.out.println("monthList después de haberla recorrido con iterator para eliminar los month que contengan 'e'");
+        for (Month month : monthList) {
+            System.out.println(month.toString() + "\n");
+        }
 
     }
 }
