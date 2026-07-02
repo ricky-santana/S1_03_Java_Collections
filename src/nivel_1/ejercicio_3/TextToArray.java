@@ -1,17 +1,16 @@
 package nivel_1.ejercicio_3;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class CountryCapitalReader {
+public class TextToArray {
     private String doc;
     private ArrayList<String> countryList;
     private ArrayList<String> capitalList;
 
-    public CountryCapitalReader(String doc) throws IOException {
+    public TextToArray(String doc) throws IOException {
         this.doc = doc;
         this.countryList = new ArrayList<String>();
         this.capitalList = new ArrayList<String>();
