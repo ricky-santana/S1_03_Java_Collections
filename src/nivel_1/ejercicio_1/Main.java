@@ -29,6 +29,11 @@ public class Main {
         monthList.add(noviembre);
         monthList.add(diciembre);
 
+        monthList.add(7, new Month("agosto"));
+        for (Month month : monthList) {
+            System.out.println(month.toString() + "\n");
+        }
+
 
     }
 
