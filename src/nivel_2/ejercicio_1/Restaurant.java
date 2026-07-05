@@ -30,8 +30,8 @@ public class Restaurant implements Comparable <Restaurant> {
     public int compareTo(Restaurant o) {
         int result = this.name.compareTo(o.name);
 
-        if (result == -1 || result == 1){
-            result = Integer.compare(this.score, o.score);
+        if (result == 0){
+            result = Integer.compare(o.score, this.score);
         }
         return result;
     }

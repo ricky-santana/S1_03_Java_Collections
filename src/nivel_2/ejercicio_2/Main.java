@@ -3,6 +3,8 @@ package nivel_2.ejercicio_2;
 import nivel_2.ejercicio_1.Restaurant;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -19,5 +21,13 @@ public class Main {
        for (Restaurant r : restaurants){
            System.out.println(r.toString());
        }
+
+      Collections.sort(restaurants);
+
+        System.out.println("Ordenada después de Collections.sort que hace uso del compareTo");
+        for (Restaurant r : restaurants){
+            System.out.println(r.toString());
+        }
+
     }
 }
