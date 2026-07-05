@@ -33,7 +33,12 @@ public class Restaurant implements Comparable <Restaurant> {
         if (result == -1 || result == 1){
             result = Integer.compare(this.score, o.score);
         }
-
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "name = " + name + " -- " +
+                "score = " + score;
     }
 }
