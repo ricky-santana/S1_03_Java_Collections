@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class GestorCsv {
 
     public GestorCsv() {
@@ -40,8 +41,8 @@ public class GestorCsv {
             BufferedWriter escritor = new BufferedWriter(new FileWriter(ruta, true));
             String line;
             line = persona.getName() + ";" + persona.getSurname() + ";" + persona.getNif();
-            escritor.newLine();
             escritor.append(line);
+            escritor.newLine();
             escritor.close();
         } catch (IOException e) {
             System.out.println(e.toString());

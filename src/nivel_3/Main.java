@@ -18,9 +18,11 @@ public class Main {
 
         System.out.println("Imprimiendo lista después de insertar una persona de ejemplo");
         listaPersonas = GestorCsv.leerArchivo("Personas.csv");
-        for (Persona p : listaPersonas){
+        for (Persona p : listaPersonas) {
             System.out.println(p.toString());
         }
+
+        MenuUsuario.iniciar();
 
     }
 }
