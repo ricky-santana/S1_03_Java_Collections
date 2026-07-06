@@ -1,13 +1,22 @@
 package nivel_2.ejercicio_1;
 
-import nivel_1.ejercicio_1.Month;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class Main {
     void main() {
+        Restaurant restauratA = new Restaurant("Can Grao", 10);
+        Restaurant restaurantB = new Restaurant("Mcdonalds", 0);
+        Restaurant restaurantC = new Restaurant("Mcdonalds", 0);
 
+        HashSet<Restaurant> restaurantsHashSet = new HashSet<>();
+        restaurantsHashSet.add(restauratA);
+        restaurantsHashSet.add(restaurantB);
+        restaurantsHashSet.add(restaurantC);
+
+        System.out.println("HashSet elimina McDonalds porque está repetido");
+        for(Restaurant r : restaurantsHashSet){
+            System.out.println(r.toString() +" \n");
+        }
     }
 }
