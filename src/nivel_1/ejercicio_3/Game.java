@@ -17,7 +17,7 @@ public class Game {
         System.out.println("Juguemos " + userName + " tienes 10 rondas para lograr la máxima puntuación" );
 
         byte rondas = 0;
-        while (rondas < 11){
+        while (rondas < 10){
             byte random = (byte) (Math.random() * 51);
             String randomCountry = new TextToArray().getCountries().get(random);
 
@@ -30,7 +30,7 @@ public class Game {
                 points++;
                 respuesta = ("Bingo, has ganado 1 punto");
             } else {
-                respuesta = ("Error, Has fallado");
+                respuesta = ("Error, Has fallado, la respuesta era: " + countryCapitals.get(randomCountry));
             }
             rondas++;
             System.out.println(respuesta +

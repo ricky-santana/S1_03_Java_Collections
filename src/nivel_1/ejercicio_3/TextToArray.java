@@ -23,7 +23,7 @@ public class TextToArray {
     public void readAndWrite() throws IOException {
         BufferedReader br = new BufferedReader (new FileReader(doc));
         String line;
-           while((line =br.readLine())!=null){
+           while((line = br.readLine())!=null){
 
             int posicionEspacio = line.indexOf(" ");
 
