@@ -1,6 +1,8 @@
 package nivel_3;
 
-public class Persona {
+import java.util.Comparator;
+
+public class Persona implements Comparator <Persona>{
     private final String name;
     private final String surname;
     private final String nif;
@@ -29,5 +31,16 @@ public class Persona {
 
     public String getNif() {
         return nif;
+    }
+
+
+    @Override
+    public int compare(Persona o1, Persona o2) {
+        return 0;
+    }
+
+    @Override
+    public Comparator reversed() {
+        return Comparator.super.reversed();
     }
 }
