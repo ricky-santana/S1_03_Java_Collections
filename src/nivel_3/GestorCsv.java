@@ -34,4 +34,18 @@ public class GestorCsv {
 
         return lista;
     }
+
+    public static void insertarPersona (Persona persona, String ruta){
+        try {
+            BufferedWriter escritor = new BufferedWriter(new FileWriter(ruta, true));
+            String line;
+            line = persona.getName() + ";" + persona.getSurname() + ";" + persona.getNif();
+            escritor.newLine();
+            escritor.append(line);
+            escritor.close();
+        } catch (IOException e) {
+            System.out.println(e.toString());
+        } finally {
+        }
+    }
 }
