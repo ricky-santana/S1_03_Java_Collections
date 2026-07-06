@@ -25,6 +25,8 @@ public class Main {
 //        MenuUsuario.iniciar();
 
         List<Persona> listaPersonas = new ArrayList<Persona>(GestorCsv.leerArchivo("Personas.csv"));
-        MenuOperaciones.mostrarPersonasZa(listaPersonas);
+        MenuOperaciones.mostrarApellidosAz(listaPersonas);
+        System.out.println("--------Za:---------");
+        MenuOperaciones.mostrarApellidosZa(listaPersonas);
     }
 }
