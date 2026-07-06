@@ -4,11 +4,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class TextToArray {
     private String doc;
-    private static ArrayList<String> countryList;
-    private static ArrayList<String> capitalList;
+    private static List<String> countryList;
+    private static List<String> capitalList;
 
     public TextToArray(String doc) throws IOException {
         this.doc = doc;
@@ -36,11 +37,11 @@ public class TextToArray {
             }
         }
     }
-    public ArrayList<String> getCountries (){
+    public List<String> getCountries (){
         return this.countryList;
     }
 
-    public ArrayList<String> getCapitals (){
+    public List<String> getCapitals (){
         return this.capitalList;
     }
 }
