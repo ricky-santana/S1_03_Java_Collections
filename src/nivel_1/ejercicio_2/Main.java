@@ -36,7 +36,7 @@ public class Main {
             inverseList2.add(intListIterator.previous());
         }
         for (int i = 0; i < intList.size(); i++){
-            System.out.println(inverseList.get(i) + "\n");
+            System.out.println(inverseList2.get(i) + "\n");
         }
 
 

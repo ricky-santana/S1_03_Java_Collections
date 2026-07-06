@@ -5,12 +5,12 @@ import java.util.HashSet;
 
 public class Main {
     void main() {
-        Restaurant restauratA = new Restaurant("Can Grao", 10);
+        Restaurant restaurantA = new Restaurant("Can Grao", 10);
         Restaurant restaurantB = new Restaurant("Mcdonalds", 0);
         Restaurant restaurantC = new Restaurant("Mcdonalds", 0);
 
         HashSet<Restaurant> restaurantsHashSet = new HashSet<>();
-        restaurantsHashSet.add(restauratA);
+        restaurantsHashSet.add(restaurantA);
         restaurantsHashSet.add(restaurantB);
         restaurantsHashSet.add(restaurantC);
 

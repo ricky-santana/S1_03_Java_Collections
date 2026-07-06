@@ -61,7 +61,7 @@ public class Main {
 
         System.out.println("monthList después de haberla recorrido con iterator para eliminar los month que contengan 'e'");
         for (Month month : monthList) {
-            System.out.println(month.toString() + "\n");
+            System.out.println(month.toString());
         }
 
     }

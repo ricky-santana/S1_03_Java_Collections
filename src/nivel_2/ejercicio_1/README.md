@@ -1,7 +1,7 @@
 # S1_03_Nivel_2_Ejercicio_1
 **HashSet sin duplicados exactos**
 ## 📌 Enunciado
-Crea una clase llamada Restaurantcon dos atributos: nom (String)y puntuació (int). 
+Crea una clase llamada Restaurant con dos atributos: nom (String)y puntuació (int). 
 Implementa los métodos necesarios ( equals()i hashCode()) para que no se puedan introducir objetos Restaurantcon el mismo nombre y la misma puntuación dentro de uno HashSet.
 
 Importante
