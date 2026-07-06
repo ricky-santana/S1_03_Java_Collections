@@ -1,7 +1,15 @@
 package nivel_3;
 
-public class Main {
-    void main(){
+import java.util.ArrayList;
+import java.util.List;
 
+public class Main {
+    void main() {
+        //Banco de pruebas
+        List<Persona> listaPersonas = new ArrayList<Persona>(GestorCsv.leerArchivo("Personas.csv"));
+
+        for (Persona p : listaPersonas){
+            System.out.println(p.toString());
+        }
     }
 }
