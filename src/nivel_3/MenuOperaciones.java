@@ -8,8 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MenuOperaciones {
-    public MenuOperaciones() {
-    }
+
     public static Persona crearPersona (){
         Scanner input = new Scanner(System.in);
         System.out.println("Introduce el nombre: ");

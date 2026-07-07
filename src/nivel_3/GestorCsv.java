@@ -7,9 +7,6 @@ import java.util.List;
 
 public class GestorCsv {
 
-    public GestorCsv() {
-    }
-
     public static List<Persona> leerArchivo (String ruta){
         List<Persona> lista = new ArrayList<>();
         String row;

@@ -18,10 +18,6 @@ public class MenuUsuario {
     private static final String OUTMESSAGE = "Adiós";
     private String respuesta;
 
-    public MenuUsuario(){
-
-    }
-
     public static void iniciar (String ruta){
         Scanner input = new Scanner(System.in);
         byte menu = 0;
