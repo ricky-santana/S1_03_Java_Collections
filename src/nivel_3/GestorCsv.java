@@ -36,7 +36,8 @@ public class GestorCsv {
         return lista;
     }
 
-    public static void insertarPersona (Persona persona, String ruta){
+    public static void insertarPersona (String ruta){
+        Persona persona = MenuOperaciones.crearPersona();
         try {
             BufferedWriter escritor = new BufferedWriter(new FileWriter(ruta, true));
             String line;
@@ -46,7 +47,7 @@ public class GestorCsv {
             escritor.close();
         } catch (IOException e) {
             System.out.println(e.toString());
-        } finally {
         }
+        System.out.println("Persona introducida");
     }
 }

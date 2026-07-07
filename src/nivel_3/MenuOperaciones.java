@@ -1,13 +1,27 @@
 package nivel_3;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 
 public class MenuOperaciones {
     public MenuOperaciones() {
     }
-
-    public static void mostrarNombresAz(List<Persona> personas) {
+    public static Persona crearPersona (){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Introduce el nombre: ");
+        String nombre = input.nextLine();
+        System.out.println("Introduce apellidos:");
+        String apellido = input.nextLine();
+        System.out.println("Introduce el NIF");
+        String nif = input.nextLine();
+        return new Persona(nombre, apellido, nif);
+    }
+    public static void mostrarNombresAz(String ruta) {
+        List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
             @Override
             public int compare(Persona o1, Persona o2) {
@@ -20,7 +34,8 @@ public class MenuOperaciones {
 
     }
 
-    public static void mostrarNombresZa(List<Persona> personas){
+    public static void mostrarNombresZa(String ruta){
+        List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
             @Override
             public int compare(Persona o1, Persona o2) {
@@ -32,7 +47,8 @@ public class MenuOperaciones {
         }
     }
 
-    public static void mostrarApellidosAz(List<Persona> personas) {
+    public static void mostrarApellidosAz(String ruta) {
+        List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
             @Override
             public int compare(Persona o1, Persona o2) {
@@ -45,7 +61,8 @@ public class MenuOperaciones {
 
     }
 
-    public static void mostrarApellidosZa(List<Persona> personas) {
+    public static void mostrarApellidosZa(String ruta) {
+        List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
             @Override
             public int compare(Persona o1, Persona o2) {
@@ -58,7 +75,8 @@ public class MenuOperaciones {
 
     }
 
-    public static void mostrarNif_0_9 (List<Persona> personas){
+    public static void mostrarNif_0_9 (String ruta){
+        List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
             @Override
             public int compare(Persona o1, Persona o2) {
@@ -73,7 +91,8 @@ public class MenuOperaciones {
         }
 
     }
-    public static void mostrarNif_9_0 (List<Persona> personas){
+    public static void mostrarNif_9_0 (String ruta){
+        List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
             @Override
             public int compare(Persona o1, Persona o2) {

@@ -22,15 +22,15 @@ public class Persona implements Comparator <Persona>{
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getSurname() {
-        return surname;
+        return this.surname;
     }
 
     public String getNif() {
-        return nif;
+        return this.nif;
     }
 
 
