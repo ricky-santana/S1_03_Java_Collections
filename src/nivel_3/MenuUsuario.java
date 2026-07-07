@@ -22,7 +22,7 @@ public class MenuUsuario {
 
     }
 
-    public static void iniciar (List<Persona> personas, String ruta){
+    public static void iniciar (String ruta){
         Scanner input = new Scanner(System.in);
         byte menu = 0;
 
