@@ -31,7 +31,6 @@ public class MenuUsuario {
             try {
                 menu = input.nextByte();
             } catch (InputMismatchException e) {
-                //Quité mensaje de Excepción porque coincide con default
                 input.nextLine();
                 menu = 0;
             }

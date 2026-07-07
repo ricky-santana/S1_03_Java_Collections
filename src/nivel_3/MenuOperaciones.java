@@ -20,6 +20,7 @@ public class MenuOperaciones {
         String nif = input.nextLine();
         return new Persona(nombre, apellido, nif);
     }
+
     public static void mostrarNombresAz(String ruta) {
         List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
@@ -91,6 +92,7 @@ public class MenuOperaciones {
         }
 
     }
+
     public static void mostrarNif_9_0 (String ruta){
         List<Persona> personas = GestorCsv.leerArchivo(ruta);
         personas.sort(new Comparator<Persona>() {
