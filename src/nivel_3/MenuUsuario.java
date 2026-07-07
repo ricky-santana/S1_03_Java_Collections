@@ -1,7 +1,6 @@
 package nivel_3;
 
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 
 public class MenuUsuario {

@@ -1,8 +1,5 @@
 package nivel_3;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
